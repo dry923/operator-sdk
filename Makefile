@@ -11,7 +11,7 @@ endif
 
 VERSION = $(shell git describe --dirty --tags --always)
 GIT_COMMIT = $(shell git rev-parse HEAD)
-REPO = github.com/operator-framework/operator-sdk
+REPO = github.com/dry923/operator-sdk
 BUILD_PATH = $(REPO)/cmd/operator-sdk
 PKGS = $(shell go list ./... | grep -v /vendor/)
 SOURCES = $(shell find . -name '*.go' -not -path "*/vendor/*")
